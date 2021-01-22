@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ArrayLibTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-12-07T20:23:14" hostname="LAPTOP-95PNFGKQ" time="0.006">
+  <properties/>
+  <testcase name="testContainsMethod" classname="ArrayLibTest" time="0.001"/>
+  <testcase name="testIntersectionMethod" classname="ArrayLibTest" time="0.001"/>
+  <testcase name="testIndexOfNotFound" classname="ArrayLibTest" time="0.001"/>
+  <testcase name="testReverseMethod" classname="ArrayLibTest" time="0.0"/>
+  <testcase name="testUnionMethod" classname="ArrayLibTest" time="0.0"/>
+  <testcase name="testContainsNotFound" classname="ArrayLibTest" time="0.0"/>
+  <testcase name="testCompactMethod" classname="ArrayLibTest" time="0.0"/>
+  <testcase name="testUniqueMethod" classname="ArrayLibTest" time="0.0"/>
+  <testcase name="testIndexOfMethod" classname="ArrayLibTest" time="0.0"/>
+  <testcase name="testWithoutMethod" classname="ArrayLibTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

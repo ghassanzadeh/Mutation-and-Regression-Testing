@@ -1,0 +1,45 @@
+buildscript {
+    dependencies {
+        classpath 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.5.1'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'info.solidsoft.pitest' version '1.5.1'
+}
+
+apply plugin: 'info.solidsoft.pitest'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'junit:junit:4.12'
+}
+
+pitest {
+    targetClasses = ['ArrayLib*']
+    testSourceSets = [sourceSets.test]
+    mainSourceSets = [sourceSets.main]
+    threads = 4
+    outputFormats = ['XML', 'HTML']
+    timestampedReports = false
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['tests']
+        }
+    }
+}
